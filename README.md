@@ -70,6 +70,7 @@ I utilized **Gemini (Google AI)** as a collaborative development assistant durin
 
 ### ⚙️ How AI Was Used:
 * **Architectural Guidance:** Used to explore the most efficient ways to handle 10,000+ events using high-performance SQL-driven reconciliation logic.
+* **Code Generation:** Assisted with FastAPI boilerplate, SQLAlchemy models, and endpoint structures.
 * **Documentation Support:** Used to refine README quality and improve the clarity of the Postman collection.
 
 ### ✅ Human Ownership & Validation
