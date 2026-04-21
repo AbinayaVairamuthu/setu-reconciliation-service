@@ -56,6 +56,17 @@ Access the interactive Swagger UI to test the API directly from your browser:
 
 ---
 
+## 🧪 Testing with Postman
+I have included a pre-configured Postman collection to simplify the review process.
+
+1. **Import:** Open Postman and import `Setu_Collection.json` from the root folder.
+2. **Endpoints:**
+   * `POST /events`: Test the ingestion logic and idempotency.
+   * `GET /reconciliation/discrepancies`: Retrieve the list of 95 identified discrepancies.
+3. **Environment:** The collection is configured to point to `http://127.0.0.1:8000` by default.
+
+---
+
 ## ⚖️ Assumptions & Tradeoffs
 * **Database Choice:** SQLite was used for portability and ease of review. For a production environment, I would recommend PostgreSQL.
 * **Reconciliation:** A discrepancy is defined as any `transaction_id` having conflicting "Success" and "Failure" states within the payment lifecycle.
