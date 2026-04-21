@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "62be29d9-91a5-4060-acd7-24e75254b69a",
+    "name": "Setu Reconciliation Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54206323",
+    "_collection_link": "https://go.postman.co/collection/54206323-62be29d9-91a5-4060-acd7-24e75254b69a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Discrepancies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/reconciliation/discrepancies",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "reconciliation",
+            "discrepancies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Transactions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/transactions?limit=10",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "transactions"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Ingest New Event",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_id\": \"manual-test-001\",\r\n  \"event_type\": \"payment_initiated\",\r\n  \"transaction_id\": \"tx-12345\",\r\n  \"merchant_id\": \"merchant_99\",\r\n  \"merchant_name\": \"Test Store\",\r\n  \"amount\": 100.0,\r\n  \"currency\": \"INR\",\r\n  \"timestamp\": \"2026-04-22T10:00:00Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/events",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "events"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
