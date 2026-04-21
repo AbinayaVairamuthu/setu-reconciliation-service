@@ -73,8 +73,6 @@ I have included a pre-configured Postman collection to simplify the review proce
 
 ---
 
----
-
 ## 🤖 AI Disclosure & Development Methodology
 I utilized **Gemini (Google AI)** as a collaborative development assistant during this assignment to ensure the solution followed industry best practices.
 
@@ -89,3 +87,7 @@ Despite using AI for acceleration, I maintain full ownership of the logic. I per
 * **Tested** the full ingestion flow from scratch.
 * **Confirmed** the final count of **95 discrepancies**.
 * **Ensured** that every specific requirement of the Setu assignment was fully satisfied.
+  
+---
+
+Thank you for providing such an interesting challenge and for taking the time to review my submission. I really enjoyed building this service, started immediately after getting this mail at evening and completed early morning. Looking forward to hearing your thoughts. Have a great day!
