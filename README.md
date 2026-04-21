@@ -2,7 +2,7 @@
 
 A high-performance backend service designed to ingest payment lifecycle events and identify reconciliation discrepancies. This solution focuses on data integrity, idempotency, and query optimization for high-volume financial data.
 
-🎥 **[Link to Video Walkthrough](PASTE_YOUR_LINK_HERE)**
+🎥 **[Link to Video Walkthrough](https://drive.google.com/file/d/1nk5gqyiI-3n1aRm9bp8e-hHUJaDI13f2/view?usp=drive_link)**
 ---
 
 ## 🏗 Architecture Overview
